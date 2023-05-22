@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .group1, .group2{
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            fieldset{
+                padding: 5px 2px;
+            }
+
+            textarea{
+                width: 60%;
+                height: 40px;
+            }
+
+            input, select{
+                width: 60%;
+                height: 26px;
+            }
+
+            
+            .radio{
+                display: inline;
+                width: 25%;
+            }
+            .submit{
+                background-color: blueviolet;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <fieldset class="group1">
+                <label for="user">Full Name</label>
+                <input type="text" placeholder="Full Name" name="name" required>
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Email" name="email" required>
+                <label for="pass">Password</label>
+                <input type="password" placeholder="Password" name="pass" required>
+                <label for="Cpass">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" name="Cpass" required>
+            </fieldset>
+
+            <fieldset class="group2">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" required>
+
+                <label for="gender">Gender </label>
+                <input type="radio" class="radio" name="male" id="Male" value="Male" required>
+                <label for="male" class="radio">Male </label>
+                <input type="radio" class="radio" name="female" id="Female" value="Female" required>
+                <label for="female" class="radio">Female </label>
+                <input type="radio" class="radio" name="other" id="other" value="other" required>
+                <label for="other" class="radio">Other </label>
+
+                <label for="country">Select your Country</label>
+                <select name="country" id="country" required>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana </option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="United States">United States</option>
+                </select>
+                <label for="checkbox">Terms and Conditions</label>
+                <input type="checkbox" name="checkbox">
+                <label >Message</label>
+                <textarea name="message" placeholder="Message" ></textarea>
+
+
+
+            </fieldset>
+            
+            <input class="submit" type="submit" id="submit">
+            
+
+
+            
+
+
+        </form>
+    </body>
+</html>
